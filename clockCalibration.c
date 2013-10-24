@@ -1,0 +1,30 @@
+#include <msp430.h>
+
+void clock_1MHZ() {
+	DCOCTL = 0;
+	BCSCTL1 = CALBC1_1MHZ;
+	DCOCTL = CALDCO_1MHZ;
+}
+
+
+void clock_8MHZ() {
+	DCOCTL = 0;
+	BCSCTL1 = CALBC1_8MHZ;
+	DCOCTL = CALDCO_8MHZ;
+}
+
+void clock_12MHZ() {
+	DCOCTL = 0;
+	BCSCTL1 = CALBC1_12MHZ;
+	DCOCTL = CALDCO_12MHZ;
+}
+
+void clock_16MHZ() {
+	DCOCTL = 0;
+	BCSCTL1 = CALBC1_16MHZ;
+	DCOCTL = CALDCO_16MHZ;
+}
+
+
+
+
